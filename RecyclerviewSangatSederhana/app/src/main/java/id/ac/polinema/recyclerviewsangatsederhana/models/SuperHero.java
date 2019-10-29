@@ -1,10 +1,20 @@
 package id.ac.polinema.recyclerviewsangatsederhana.models;
 
 public class SuperHero {
-    private String heroName;
+    public int imgHero;
+    public String heroName;
 
-    public SuperHero(String heroName){
-        this.setHeroName(heroName);
+    public SuperHero(int imgHero, String heroName) {
+            this.setImgHero(imgHero);
+            this.setHeroName(heroName);
+    }
+
+    public int getImgHero() {
+        return imgHero;
+    }
+
+    public void setImgHero(int imgHero) {
+        this.imgHero = imgHero;
     }
 
     public String getHeroName() {
